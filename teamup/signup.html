@@ -1,0 +1,276 @@
+<html>
+<head>
+  <title>TeamUp</title>
+  <meta name="viewport" content="width=device-width">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Hind:400,700|Roboto+Slab:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/flickity.min.css" media="screen">
+  <script src="js/flickity.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body class="signup sub">
+  <div class="container header-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"></a>
+      <div class="utility-nav">
+        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="signup.html"><strong>Signup</strong></a>
+        <div class="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="ml-auto navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><strong>Login</strong></a></li>
+          <li class="nav-item"><a class="button" href="signup.html">Try It Free</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <nav class="mobile-nav">
+    <ul>
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+      <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+      <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+    </ul>
+  </nav>
+  <div class="cover container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Let's get <br class="mobile">started.</h2>
+        <p>Your 30 day free trial doesn't begin until you process your first transaction.</p>
+      </div>
+      <div class="col-md-5 ml-auto quote">
+        <blockquote>
+          <p>"Support are on the ball - quick answers, and easy to understand instructions."</p>
+          <img src="img/testimonial-pippa.png" width="48">
+          <div class="author-wrap">
+            <span class="author">Pippa Loveridge</span>
+            <span class="company">Polenastics</span>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <div class="container signup-form">
+    <div class="box-shadow">
+      <div class="row">
+        <div class="col-md-12 header">
+          Signup for your free 30 day trial.
+        </div>
+        <div class="col-md-6 form">
+          <div class="row">
+            <div class="col-md-6">
+              <label>First Name</label>
+              <input type="text" placeholder="John">
+            </div>
+            <div class="col-md-6">
+              <label>Last Name</label>
+              <input type="text" placeholder="Doe">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label>Email Address</label>
+              <input type="email" placeholder="you@yourdomain.com">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label>Create A Password</label>
+              <input type="password">
+            </div>
+          </div>
+          <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="desktop">
+                <input type="submit" class="button primary" value="Sign Up">
+              </div>
+              <div class="mobile">
+                <input type="submit" class="button primary" value="Start your free 30 day trial">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="col-md-12 feature-list">
+            <label>Why Teamup?</label>
+            <ul>
+              <li>Your 30 day free trial doesn't begin until you process your first transaction.</li>
+              <li>No credit card required. Pay nothing until you're sure you love teamup.</li>
+              <li>Every account comes with free personal support, forever.</li>
+              <li>All the software you'll ever need to run your fitness business.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container testimonials">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Testimonials</h3>
+      </div>
+      <div class="col-md-6 testimonial">
+        <label>On Booking Online</label>
+        <p>I have found Teamup to be a great fit for our box. <strong>Our members all register from their cell-phones for class</strong> and I can very quickly make changes on the fly to modify our offerings, class times, or products.</p>
+        <div class="author-wrap">
+          <img src="img/testimonial3.png" width="48">
+          <span class="author">Aubrey Felton</span>
+          <span class="company">The Steel Yard Crossfit</span>
+        </div>
+      </div>
+      <div class="col-md-6 testimonial">
+        <label>On Planning</label>
+        <p>Teamup has been a great resource for us and has changed my business. <strong>It allows us to see who is coming in for sessions and plan accordingly.</strong> Teamup has made everything easier.</p>
+        <div class="author-wrap">
+          <img src="img/testimonial4.png" width="48">
+          <span class="author">Quintan Sanft</span>
+          <span class="company">Fitness Pacific</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container testimonials">
+    <div class="carousel">
+      <div class="carousel-cell">
+        <label>On Booking Online</label>
+        <div class="quote">
+          "My clients love that they can <strong>log in to Team Up and amend their bookings</strong> so easily from their phones, and I love that they don't have to contact me to do this."
+        </div>
+        <div class="author">
+          <strong>Lorna Thomas</strong>, Pole Athletics
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <label>On Booking Online</label>
+        <div class="quote">
+          "My clients love that they can <strong>log in to Team Up and amend their bookings</strong> so easily from their phones, and I love that they don't have to contact me to do this."
+        </div>
+        <div class="author">
+          <strong>Lorna Thomas</strong>, Pole Athletics
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container testimonials">
+    <div class="row">
+      <div class="col-md-12 header">
+        <label>On Support</label>
+      </div>
+      <div class="col-md-4 testimonial">
+        <p>Support are on the ball - quick answers, and easy to understand instructions</p>
+        <div class="author-wrap">
+          <img src="img/testimonial5.png" width="48" height="48">
+          <div>
+            <span class="author">Pippa Loveridge</span>
+            <span class="company">Polenastics</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 testimonial">
+        <p>The support team is always on hand to help out should you have any set up issues.</p>
+        <div class="author-wrap">
+          <img src="img/testimonial6.png" width="48" height="48">
+          <div>
+            <span class="author">David McManus</span>
+            <span class="company">CrossFit Lurgan</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 testimonial">
+        <p>If I need help, teamup support is just a quick message away.</p>
+        <div class="author-wrap">
+          <img src="img/testimonial7.png" width="48" height="48">
+          <div>
+            <span class="author">Andrew Hitch</span>
+            <span class="company">CrossFit Firehills</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/logo.svg" class="logo">
+          <p class="info">Professional management software for fitness studios, boxes and gyms.</p>
+          <p class="copyright">&copy; 2011-2018 teamup sports, Inc (US) / Team Up Sports Limited (UK)</p>
+        </div>
+        <div class="col full login">
+          <ul>
+            <li><a href="#">Login</a> <span class="mobile"><a href="#">or <strong>Signup</strong></a></span></li>
+            <li class="desktop"><a href="#"><strong>Signup</strong></a></li>
+          </ul>
+        </div>
+        <div class="col half">
+          <label>Sitemap</label>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="col half">
+          <label>&nbsp;</label>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Franchises</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col social full">
+          <label>Social</label>
+          <ul>
+            <li class="twitter"><a href="#">Twitter</a></li>
+            <li class="facebook"><a href="#">Facebook</a></li>
+            <li class="google"><a href="#">Google+</a></li>
+            <li class="instagram"><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col locale">
+          <label>Locale</label>
+          <span class="dropdown">
+            <span class="value">US <img src="img/usa.svg"></span>
+            <ul>
+              <li class="usa selected">US <img src="img/usa.svg"></li>
+              <li data-value="gbp">UK <img src="img/uk.svg"></li>
+            </ul>
+          </span>
+        </div>
+        <div class="col mobile copy">
+          <p>&copy; 2011-2018 teamup sports, Inc (US) / Team Up Sports Limited (UK)</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

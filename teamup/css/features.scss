@@ -1,0 +1,159 @@
+body.features {
+}
+
+.feature-links {
+  position: relative;
+  z-index: 1;
+
+  ul {
+    width: 100%;
+    padding: 17px 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 87px;
+
+    li {
+      a {
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+.feature-section {
+  margin-top: 105px;
+  &#membership {
+    margin-top: 0;
+  }
+
+  .header {
+    text-align: center;
+
+    p {
+      width: 70%;
+      margin-left: 15%;
+      margin-bottom: 46px;
+      line-height: 28px;
+      font-size: 22px;
+    }
+  }
+
+  .col-md-6 {
+    padding: 0 7px;
+  }
+
+  label {
+    color: #9e0059;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+    margin-bottom: 18px;
+  }
+
+  .feature {
+    text-align: left;
+    padding: 27px 32px;
+    padding-bottom: 26px;
+    margin-bottom: 16px;
+    min-height: 180px;
+
+    p {
+      margin-bottom: 0;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body.features{
+    .feature-links {
+      position: relative;
+
+      &:before {
+        content: "Jump to feature set";
+        position: absolute;
+        left: 41px;
+        top: 14px;
+        color: $grey4;
+        display: block;
+        font-size: 12px;
+        line-height: 12px;
+        z-index: 2;
+      }
+
+      ul {
+        background-image: url(../img/dropdown.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 18px;
+        margin-top: 29px;
+        margin-bottom: 28px;
+        display: block;
+        min-height: 40px;
+        transition:All .25s ease;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        li {
+          display: none;
+          font-size: 14px;
+          line-height: 28px;
+        }
+
+        &.active {
+          padding: 42px 16px 16px 16px;
+          min-height: 254px;
+
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .feature-section {
+      margin-top: 36px;
+
+      .header {
+        padding: 0 10px;
+        p {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 22px;
+          font-size: 12px;
+          line-height: 17px;
+        }
+      }
+    }
+
+    .feature {
+      padding: 10px 16px 14px 16px;
+      height: auto;
+      margin-bottom: 10px;
+      min-height: 0;
+
+      label {
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-bottom: 0 !important;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    .callout-wrap {
+      &:before, &:after {
+        display: none;
+      }
+    }
+
+    .get-started {
+      margin-top: 28px;
+    }
+  }
+}

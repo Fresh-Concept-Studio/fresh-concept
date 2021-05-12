@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    body {
+      margin: 0;
+    }
+  </style>
+  <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body class="about">
+  <div class="header fixed z-10 w-full overflow-hidden">
+    <div class="hidden sm:block sm:absolute sm:inset-0">
+      <svg class="absolute bottom-0 right-0 transform translate-x-1/2 mb-48 text-gray-700 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0" width="364" height="384" viewBox="0 0 364 384" fill="none">
+        <defs>
+          <pattern id="eab71dd9-9d7a-47bd-8044-256344ee00d0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="364" height="384" fill="url(#eab71dd9-9d7a-47bd-8044-256344ee00d0)" />
+      </svg>
+    </div>
+    <div class="relative pt-6 pb-6 sm:pb-6">
+      <nav class="relative max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6">
+        <div class="flex items-center justify-between flex-1">
+          <div class="flex items-center justify-between w-full md:w-auto">
+            <a href="#" aria-label="Home">
+              <img class="h-8 w-auto sm:h-10" src="images/logo.png" alt="Logo">
+            </a>
+<!--             <div class="-mr-2 flex items-center md:hidden">
+              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:bg-gray-700 focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div> -->
+          </div>
+          <div class="hidden space-x-10 md:flex md:ml-10">
+            <a href="index.html" class="font-medium text-white hover:text-gray-300 transition duration-150 ease-in-out">Home</a>
+            <a href="technology.html" class="font-medium text-white hover:text-gray-300 transition duration-150 ease-in-out">Technology</a>
+            <a href="about.html" class="font-medium text-white hover:text-gray-300 transition duration-150 ease-in-out" style="border-bottom: 1px solid #33C69F;">About</a>
+            <a href="#" class="font-medium text-white hover:text-gray-300 transition duration-150 ease-in-out">Careers</a>
+            <a href="contact.html" class="font-medium text-white hover:text-gray-300 transition duration-150 ease-in-out">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--
+        Mobile menu, show/hide based on menu open state.
+
+        Entering: "duration-150 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+<!--       <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-md">
+          <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+            <div class="px-5 pt-4 flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="">
+              </div>
+              <div class="-mr-2">
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
+                  <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="space-y-1 px-2 pt-2 pb-3">
+              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-gray-50 focus:outline-none focus:text-white focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Home</a>
+              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-gray-50 focus:outline-none focus:text-white focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Technology</a>
+              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-gray-50 focus:outline-none focus:text-white focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">About</a>
+              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-gray-50 focus:outline-none focus:text-white focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Careers</a>
+              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-gray-50 focus:outline-none focus:text-white focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <div class="content">
+    <div class="max-w-7xl mx-auto py-16 pb-24">
+      <h1 class="mb-0 relative">Life is motion, but our knowledge of biology has largely been informed by static snapshots. We're changing that.</h1>
+      <p></p>
+    </div>
+    <div class="py-16 bg-gray-50 overflow-hidden lg:py-24">
+      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
+        <svg class="hidden lg:block absolute left-0 transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
+          <defs>
+            <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
+        </svg>
+
+        <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+          <div class="mt-10 -mx-4 relative lg:mt-0">
+            <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+              <defs>
+                <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+            </svg>
+            <img class="relative mx-auto" src="images/about1.png" width="600" alt="">
+          </div>
+          <div class="relative">
+            <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+              Our Core Motivation
+            </h4>
+            <p class="mt-3 text-lg leading-7 text-gray-500">
+              Eikon's core driver is to bring us closer to the true mechanisms underlying biology and pharmacology to apply novel approaches to drug discovery. Until recently, it was not possible to observe protein movement in living cells.  Direct visualization of individual proteins moving in living cells is a window to biological ground truth. Eikon is leveraging this new access, and the disruptive new understandings of biology that result, to identify therapies in a manner not previously possible.
+            </p>
+          </div>
+        </div>
+
+        <svg class="hidden lg:block absolute right-0 transform translate-x-1/2 translate-y-12" width="404" height="400" fill="none" viewBox="0 0 404 400">
+          <defs>
+            <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="404" height="400" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+        </svg>
+
+        <div class="relative mt-12 sm:mt-16 lg:mt-24">
+          <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+            <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-2">
+              <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+                <defs>
+                  <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                  </pattern>
+                </defs>
+                <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
+              </svg>
+              <img class="relative mx-auto" src="images/about3.png" width="600" alt="">
+            </div>
+            <div class="lg:col-start-1">
+              <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+                The Technology
+              </h4>
+              <p class="mt-3 text-lg leading-7 text-gray-500">
+                Our therapeutic discovery platform is rooted in a Nobel prize-winning technology, super-resolved fluorescence microscopy, invented by our founder, physicist Eric Betzig (Chemistry, 2014). This advance made it possible to observe individual proteins in a living cell, where previously only cellular organelles could be directly visualized.  Eric collaborated with Eikon's other founders, Xavier Darzacq, Luke Lavis and Robert Tjian, to enable tracking the dynamic movement of specific, known individual proteins in living cells. What they observed transformed long-held assumptions about biology and demonstrated the importance of this visualization to true biological understanding.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mt-12 sm:mt-16 lg:mt-24">
+          <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+            <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+              <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
+                <defs>
+                  <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                  </pattern>
+                </defs>
+                <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
+              </svg>
+              <img class="relative mx-auto" src="images/about2.png" width="600" alt="">
+            </div>
+            <div class="lg:col-start-2">
+              <h4 class="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+                The Team
+              </h4>
+              <p class="mt-3 text-lg leading-7 text-gray-500">
+                Eikon was founded to develop therapies based on this novel ability to track the movement of specific proteins in living cells. We have amassed a team with expertise across biology, chemistry, physics, microscopy, engineering, automation and computing to create a high-throughput screening platform to detect compound-induced changes in protein dynamics. With our internally-developed platform and process, we can label and screen essentially any protein in the proteome, creating the opportunity to pursue therapeutic targets based on profiling their dynamics. With a fundamentally novel mechanism and approach to therapeutic discovery, Eikon will identify and develop therapeutics that impact a wide range of diseases with unmet medical needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-900">
+      <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-10">
+          Interested in joining the team?
+          <br>
+          <span class="text-gray-300">We're hiring!</span>
+        </h2>
+        <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+          <div class="inline-flex rounded-md shadow">
+            <a href="#" class="button inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 bg-teal-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+              View Job Openings
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white footer">
+      <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="xl:col-span-1">
+            <img class="h-8 w-auto sm:h-10" src="images/logo-dark.png" alt="Logo">
+            <p class="mt-8 text-gray-500 text-base leading-6">
+              Eikon Therapeutics is a new biopharmaceutical company employing the revolutionary technology of single molecule imaging at the interface of chemistry, engineering and biology to discover novel treatments for life-threatening diseases.
+            </p>
+          </div>
+          <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-2 md:gap-8 ">
+              <div>
+
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+                  Pages
+                </h4>
+                <ul class="mt-4">
+                  <li>
+                    <a href="technology.html" class="text-base leading-6 text-gray-500 hover:text-white">
+                      Technology
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="about.html" class="text-base leading-6 text-gray-500 hover:text-white">
+                      About
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="#" class="text-base leading-6 text-gray-500 hover:text-white">
+                      Team
+                    </a>
+                  </li>
+                  <li class="mt-4">
+                    <a href="contact.html" class="text-base leading-6 text-gray-500 hover:text-white">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-1 md:gap-8">
+              <div class="mt-12 md:mt-0">
+                <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+                  Subscribe to our newsletter
+                </h4>
+                <p class="mt-4 text-gray-500 text-base leading-6">
+                  The latest news, articles, and resources, sent to your inbox.
+                </p>
+                <form class="mt-4 sm:flex sm:max-w-md">
+                  <input aria-label="Email address" type="email" required class="appearance-none w-full bg-gray-100 px-5 py-3 border border-transparent text-base leading-6 rounded-md text-white bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out" placeholder="Enter your email">
+                  <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                    <button class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out" style="background-color: #fdb515;">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-gray-200 pt-8">
+          <p class="text-base leading-6 text-gray-400 xl:text-center">
+            &copy; 2020 Eikon Therapeutics, Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

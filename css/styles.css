@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'AllerBold';
+    src: url('fonts/aller_bd-webfont.eot');
+    src: url('fonts/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aller_bd-webfont.woff') format('woff'),
+         url('fonts/aller_bd-webfont.ttf') format('truetype'),
+         url('fonts/aller_bd-webfont.svg#AllerBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'AllerLight';
+    src: url('fonts/aller_lt-webfont.eot');
+    src: url('fonts/aller_lt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aller_lt-webfont.woff') format('woff'),
+         url('fonts/aller_lt-webfont.ttf') format('truetype'),
+         url('fonts/aller_lt-webfont.svg#AllerLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'AllerRegular';
+    src: url('fonts/aller_rg-webfont.eot');
+    src: url('fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aller_rg-webfont.woff') format('woff'),
+         url('fonts/aller_rg-webfont.ttf') format('truetype'),
+         url('fonts/aller_rg-webfont.svg#AllerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'League';
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.woff') format('woff'),
+         url('fonts/League_Gothic-webfont.tt') format('truetype'),
+         url('fonts/League_Gothic-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Globals */
+
+body {
+	margin:0;
+	font-family: 'AllerLight';
+	font-size:13px;
+	color:#666;
+	background:url(../images/paper-back.png) repeat;
+}
+
+a {
+	text-decoration:none;
+	color:#D4392A;
+}
+
+a:hover { text-decoration:underline; }
+
+h1, h2, h3, h4 { font-family: 'League'; text-transform:uppercase; margin:0; padding:0; font-weight:normal; }
+h1 {
+	font-size:80px;
+	color:#333;
+	margin-top:0px;
+}
+
+h2 {
+	color:#D4392A;
+	font-size:55px;
+	margin:0 0 5px 0
+}
+
+
+h3 {
+	color:#7C7C7C;
+	font-size:29px;
+	margin-top:-15px;
+}
+
+h4 {
+	color:#333;
+	font-size:20px;
+	margin:18px 0 -15px 0;
+}
+
+#topline {
+	height:5px;
+	width:100%;
+	background:#333;
+}
+
+.cont {
+	width:960px;
+	margin:auto;
+}
+
+.top-50 {
+	margin-top:60px;
+}
+.right-20 {margin-right:20px;}
+.left-50 {margin-left:50px;}
+.clear {clear:both; }
+.left { float:left; }
+.right { float:right; }
+.dark { color:#333; }
+.dark a { color:#333; }
+.dark a:hover { color:#D4392A; text-decoration:none; }
+
+.diagonal {
+	height: 8px;
+	background:url(../images/diagonals.png);
+}
+
+hr {
+	margin:3px 0 0 0;
+	border:none;
+	border-bottom:1px solid #ccc;
+}
+
+p {
+ margin-bottom:0;
+}
+
+#nav {
+	margin-top: 40px;
+	font-family:"League";
+	font-size:25px;
+}
+
+#nav a {
+	color:#333;
+}
+
+#nav a:hover {
+	color:#D4392A;
+	text-decoration:none;
+}
+
+#nav li {
+	text-transform:uppercase;
+	list-style:none;
+	float:left;
+	margin:0 40px 0 0;
+}
+
+#nav .selected {
+	color:#D4392A;
+}
+
+.resume-btn {
+	background:#8FBFC1;
+	border-radius:4px;
+	color:#fff;
+	display:block;
+	float:right;
+	padding:10px 20px;
+	margin-top:-10px;
+}
+
+.resume-btn:hover {
+	background:#84B6B7;
+}
+
+#portfolio {
+	margin: 20px auto;
+	padding:0;
+}
+
+#portfolio li {
+	height:230px;
+	width:225px;
+	float:left;
+	list-style:none;
+	position:relative;
+	margin:0 5px 6px 0;
+	border: 5px solid #333;
+}
+
+#portfolio li:hover { -webkit-transition:opacity 0.25s ease-in-out;-moz-transition:opacity 0.25s ease-in-out; -o-transition:opacity 0.25s ease-in-out; background-position: 0 -230px; }
+#surefoot { background:url(../images/surefoot/thumb.png); }
+#jauntaroo { background:url(../images/jauntaroo/thumb.png); }
+#jauntaroo:hover { border: 5px solid #C6340E; }
+#foliodomain { background:url(../images/foliodomain/thumb.png); }
+#foliodomain:hover { border: 5px solid #008FD5; }
+#fusion { background:url(../images/fusion/thumb.png); }
+#kennedy { background:url(../images/kennedy/thumb.png); }
+#kennedy:hover { border: 5px solid #001E4C; }
+#home-spotter { background:url(../images/home-spotter/thumb.png); }
+#home-spotter:hover { border: 5px solid #86AA4E; }
+#volta { background:url(../images/volta/thumb.png); }
+#volta:hover { border: 5px solid #C8222B; }
+#wapo { background:url(../images/Washington_Post/thumb.png); }
+#wapo:hover { border: 5px solid #FF8E32; }
+#redcross { background:url(../images/red_cross/thumb.png); }
+#redcross:hover { border: 5px solid #B42227; }
+
+
+
+.last {margin-right:0; }
+
+.single-portfolio img {
+	margin-top:20px;
+	-moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.submit {
+	background:#8FBFC1;
+	border-radius:4px;
+	color:#fff;
+	display:block;
+	padding:10px 20px;
+	margin-top:10px;
+	border:none;
+	font-family:"League";
+	font-size:25px;
+	cursor:pointer;
+}
+
+.submit:hover {
+	background:#84B6B7;
+}
+
+input[type=text] {
+	font-family:"League";
+	font-size:20px;
+	padding:10px;
+	border:1px solid #ccc;
+	border-radius:4px;
+	color:#7C7C7C;
+	width:445px;
+	float:left;
+	margin:30px 20px 0 0;
+}
+
+textarea {
+	font-family:"League";
+	font-size:20px;
+	padding:10px;
+	border:1px solid #ccc;
+	border-radius:4px;
+	color:#7C7C7C;
+	width:935px;
+	height:175px;
+	margin:30px 0 25px 0;
+}
+
+#theForm {
+	width:1000px;
+}
+
+#footer {
+ width:100%;
+ height:150px;
+ margin-top:50px;
+ background:#333;
+ clear:both;
+}

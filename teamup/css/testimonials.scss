@@ -1,0 +1,191 @@
+body.testimonials {
+  position: relative;
+
+  .header {
+    text-align: center;
+
+    label {
+      margin-bottom: 28px;
+      color: #9e0059;
+    }
+  }
+
+  .cover {
+    .illustration {
+      margin-top: -40px;
+    }
+  }
+
+  .customers {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 112px;
+    margin-top: -29px;
+    width: 100%;
+  }
+
+  .customers .box-shadow {
+    background-image: url('../img/customer-background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 123px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-top: -80px;
+  }
+
+  .featured-testimonial {
+    margin-top: 70px;
+    margin-bottom: 73px;
+
+    img {
+      width: 100px;
+    }
+
+    p {
+      color: $dark-blue;
+    }
+
+    label {
+      font-size: 12px;
+      color: #9e0059;
+      margin-bottom: 7px;
+    }
+
+    .box-shadow {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 30px;
+      padding-right: 60px;;
+    }
+
+    .author-info {
+      padding-left: 32px;
+    }
+
+    .author {
+      font-family: 'Roboto Slab', serif;
+      font-size: 42px;
+      line-height: 42px;
+      display: block;
+      margin-top: 65px;
+      font-weight: 700;
+    }
+
+    .company {
+      font-size: 21px;
+      line-height: 32px;
+      color: $grey4;
+    }
+  }
+
+  .get-started {
+    padding-top: 0;
+  }
+}
+
+body.testimonials, body.signup {
+  .carousel {
+    margin-top: 72px;
+    margin-bottom: 78px;
+  }
+
+  .carousel {
+    padding: 44px 0 52px 0;
+
+    label {
+      margin-bottom: 22px;
+    }
+
+    .quote {
+      font-size: 33px;
+      line-height: 41px;
+      margin-bottom: 31px;;;
+    }
+
+    .carousel-cell {
+      padding: 0 20%;
+    }
+
+    .author {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body.testimonials {
+    .cover {
+      .illustration {
+        margin-top: 4px;
+      }
+    }
+
+    .header {
+      text-align: center;
+
+      label {
+        margin-bottom: 16px;
+      }
+    }
+    .customers {
+      height: 120px;
+      padding: 0 24px;
+      margin-bottom: 18px;
+      margin-top: -105px;
+
+      .box-shadow {
+        background-image: url('../img/customer-background-mobile.png');
+        margin-top: 0;
+      }
+    }
+
+    .featured-testimonial {
+      margin-top: 8px !important;
+      margin-bottom: 8px !important;
+
+      .box-shadow {
+        padding: 24px 16px;
+
+        .author-info {
+          padding-left: 0;
+
+          img {
+            float: left;
+            width: 60px;
+            margin-right: 16px;
+            margin-top: -8px;
+          }
+
+          .author {
+            margin-top: 0;
+            font-size: 21px !important;
+            line-height: 20px !important;
+            display: block;
+            width: 100%;
+          }
+
+          .company {
+            font-size: 12px !important;
+            display: block;
+          }
+        }
+      }
+
+      .author-wrap {
+        float: left;
+      }
+    }
+
+    .carousel {
+      margin-top: 48px;
+      margin-bottom: 48px;
+    }
+
+    .get-started {
+      margin-top: 48px;
+    }
+  }
+}

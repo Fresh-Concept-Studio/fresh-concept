@@ -1,0 +1,14 @@
+body.features {
+  background-color: black; }
+
+.feature-links ul {
+  padding: 22px 30px;
+  list-style: none;
+  display: flex; }
+
+@media (max-width: 768px) {
+  .customers {
+    width: 100%; }
+
+  .callout-wrap:before, .callout-wrap:after {
+    display: none; } }

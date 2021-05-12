@@ -1,0 +1,17 @@
+body.testimonials .testimonial img {
+  float: left;
+  margin-right: 16px; }
+body.testimonials .testimonial .author {
+  font-family: 'Roboto Slab', serif;
+  font-size: 21px;
+  color: $dark-blue;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block; }
+body.testimonials .testimonial .company {
+  font-size: 16px;
+  color: $dark-blue;
+  letter-spacing: 0;
+  line-height: 16px; }

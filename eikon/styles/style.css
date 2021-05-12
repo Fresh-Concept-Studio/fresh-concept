@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap');
+
+body {
+  background-color: #0a1b2b;
+}
+
+.header {
+  background-color: #0a1b28;
+  border-bottom: 1px solid #192a36;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 55px !important;
+  font-weight: 700 !important;
+  color: white;
+  line-height: 70px;
+}
+
+.technology h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 75px !important;
+  font-weight: 700 !important;
+  color: white;
+  line-height: 90px;
+  margin-bottom: 30px !important;
+}
+
+.home .button {
+  font-weight: 700 !important;
+  background-color: #33C69F !important;
+  font-size: 24px !important;
+  letter-spacing: .5px;
+  text-transform: capitalize;
+}
+
+.button:hover {
+  background-color: rgba(51, 198, 159, .9) !important;
+}
+
+.left, .right {
+  width: 50%;
+  padding: 0 80px;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.technology p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: 22px !important;
+  line-height: 30px;
+  color: white;
+  opacity: .7;
+}
+
+.content {
+  padding-top: 90px;
+}
+
+p {
+  color: white;
+}
+
+.footer p {
+ font-size: 14px !important;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  height: 1000px;
+  opacity: 1;
+  transition:All 1s ease;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+#super-resolution .right {
+  padding-left: 0 !important;
+}
+
+#super-resolution .left {
+  padding: 0 !important;
+}
+
+#super-resolution.active, #single-particle.active, #industrialization.active {
+  opacity: 1;
+}
+
+#super-resolution .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 200px;
+  width: 100%;
+  background-image: url('../images/cell-before.png');
+  background-size: 100%;
+  background-position: -200px center;
+  background-repeat: no-repeat;
+}
+
+#super-resolution .image:before {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px; text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ccc;
+  content: "After | Before";
+  border-left: 1px solid #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  text-indent: -48px;
+}
+
+#super-resolution .left, #industrialization .left {
+  width: 75%;
+  opacity: 0;
+  left: -200px;
+  transition:All 1s ease;
+}
+
+#super-resolution .left.active, #industrialization .left.active {
+  opacity: 1;
+  left: 0;
+}
+
+#super-resolution .right, #industrialization .right {
+  opacity: 0;
+  left: 100px;
+  padding-right: 100px;
+  transition:All 1s ease;
+  position: relative;
+}
+
+#super-resolution .right.active, #industrialization .right.active {
+  opacity: 1;
+  left: 0;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#super-resolution .left {
+  width: 75%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+#single-particle .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#single-particle .slide.one {
+  z-index: 9;
+}
+
+#single-particle .slide.one .phase-2 {
+  opacity: 0;
+  z-index: 1;
+}
+
+#single-particle .slide.one .phase-3 {
+  opacity: 0;
+  z-index: 1;
+}
+
+#single-particle .slide.two {
+  opacity: 0;
+  z-index: 10;
+}
+
+.phase-2 {
+  opacity: 0;
+}
+
+#single-particle .slide-3 { z-index: 8; opacity: 0; }
+#single-particle .slide-4 { z-index: 7; opacity: 0; }
+#single-particle .slide-5 { z-index: 6; opacity: 0; }
+#single-particle .slide-6 { z-index: 5; opacity: 0; }
+
+
+
+#industrial .left {
+  padding-left: 40px;
+  padding-right: 0;xs
+}
+
+
+.contact button, .about .button {
+  background-color: #33C69F !important;
+}
+
+.contact h1 {
+  position: relative;
+}
+
+.contact h1:after, .about h1:after {
+  content: "";
+  height: 4px;
+  width: 175px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background-color: #33C69F;
+}

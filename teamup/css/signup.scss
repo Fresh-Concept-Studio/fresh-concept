@@ -1,0 +1,165 @@
+body.signup {
+  .signup-form {
+    margin-top: 48px;
+    margin-bottom: 80px;
+
+    .box-shadow {
+      padding: 48px;
+    }
+
+    .header {
+      font-size: 27px;
+      line-height: 27px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .form {
+      border-right: 1px solid $border-light;
+      padding-right: 48px;
+
+      .button {
+        margin-bottom: 0;
+        background-image: url('../img/arrow-white.svg');
+        background-repeat: no-repeat;
+        background-position: 60% center;
+      }
+    }
+
+    .feature-list {
+      padding-left: 33px;
+      padding-top: 8px;
+
+      label {
+        margin-bottom: 24px;
+        color: $purple;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          font-size: 21px;
+          line-height: 27px;
+          margin-bottom: 24px;
+          background-image: url('../img/list.svg');
+          background-position: left 8px;
+          background-repeat: no-repeat;
+          padding-left: 32px;
+        }
+      }
+    }
+  }
+
+  .g-recaptcha {
+    margin: 0px 0 32px 0;
+  }
+
+  .testimonials {
+    label {
+      color: $purple;
+    }
+
+    h3 {
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  .carousel {
+    margin-top: 70px;
+    margin-bottom: 78px;
+  }
+
+  footer {
+    margin-top: 73px;
+  }
+}
+
+@media (max-width: 768px) {
+  body.signup {
+    .signup-form {
+      margin-top: 30px;
+      margin-bottom: 34px;
+
+      .box-shadow {
+        padding: 16px;
+      }
+
+      .form {
+        border-right: none;
+        padding-right: 0;
+      }
+
+      .header {
+        font-size: 21px;
+        line-height: 27px;
+        margin-bottom: 22px;
+      }
+
+      label {
+        margin-bottom: 8px;
+      }
+
+      input {
+        margin-bottom: 14px;
+        width: 100%
+      }
+
+      .feature-list {
+        padding: 32px 0 0 0;
+
+        label {
+          font-size: 16px;
+        }
+
+        ul li {
+          font-size: 16px;
+          line-height: 21px;
+        }
+
+        li {
+          margin-bottom: 17px !important;
+        }
+      }
+
+      .mobile {
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        padding-right: 18% !important;
+        background-position: 85% center !important;
+        margin-top: 10px;
+      }
+    }
+
+    .testimonials {
+      .header {
+        margin-bottom: 5px;
+      }
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+
+    .carousel {
+      margin-top: 14px;
+      margin-bottom: 48px;
+    }
+
+    footer {
+      margin-top: 20px;
+    }
+
+    .flickity-page-dots {
+      display: none !important;
+    }
+  }
+}
