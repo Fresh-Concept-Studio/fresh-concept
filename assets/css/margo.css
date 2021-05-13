@@ -533,6 +533,10 @@ TABLE OF CONTENT
 		z-index: 1
 	}
 
+	.entry-image.gensler {
+		background-position: center;
+	}
+
 
 
 /** 14. Works */
@@ -615,6 +619,11 @@ TABLE OF CONTENT
 	#project img {
 		display: block;
 		margin: 0 auto
+	}
+
+	#project .row {
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 
@@ -1060,6 +1069,10 @@ h1:after {
 
 	.entry-image {
 		background-position: center top;
+	}
+
+	.entry-image.atomwise {
+		background-position: center !important;
 	}
 
 	.entry-image.latitude {
