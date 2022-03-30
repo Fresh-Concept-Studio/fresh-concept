@@ -346,19 +346,19 @@ Pacman.User = function (game, map) {
         console.log(current.x +", "+ current.y);
 
         if(current.x < 10 && current.y == 30) {
-            window.location = "roadmap.html";
+            setTimeout(() => { window.location = "roadmap.html"; }, 300);
         }
 
         if(current.x < 10 && current.y > 50) {
-            window.location = "mint.html";
+            setTimeout(() => { window.location = "mint.html"; }, 300);
         }
 
         if(current.x > 170 && current.y == 30) {
-            window.location = "atm.html";
+            setTimeout(() => { window.location = "atm.html"; }, 300);
         }
 
         if(current.x > 170 && current.y > 50) {
-            window.location = "blog.html";
+            setTimeout(() => { window.location = "blog.html"; }, 300);
         }
 
         return {
