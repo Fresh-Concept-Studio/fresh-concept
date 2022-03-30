@@ -21,38 +21,48 @@ body {
 
 #pacman canvas {
   position: relative;
-  z-index: 1;
+  z-index: 4;
+}
+
+#pacman .mask {
+  position: absolute;
+  left: 2.5%;
+  right: 2.5%;
+  top: 0;
+  bottom: 0;
+  background-color: #0D0D0E;
+  z-index: 3;
 }
 
 .roadmap-spot {
   position: absolute;
-  width: 191.5px;
-  top: 12.8%;
-  left: -168px;
+  width: 125px;
+  top: 13.5%;
+  left: -140px;
   z-index: 2;
 }
 
 .mint-spot {
   position: absolute;
-  width: 191.5px;
-  bottom: 20.3%;
-  left: -168px;
+  width: 90px;
+  bottom: 21.3%;
+  left: -105px;
   z-index: 2;
 }
 
 .atm-spot {
   position: absolute;
-  width: 191.5px;
-  top: 12.8%;
-  right: -168px;
+  width: 90px;
+  top: 13.5%;
+  right: -105px;
   z-index: 2;
 }
 
 .blog-spot {
   position: absolute;
-  width: 191.5px;
-  bottom: 20.3%;
-  right: -168px;
+  width: 94px;
+  bottom: 21.3%;
+  right: -110px;
   z-index: 2;
 }
 
