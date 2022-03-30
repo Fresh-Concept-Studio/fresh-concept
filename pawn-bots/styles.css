@@ -57,7 +57,7 @@ body {
 }
 
 #shim {
-  font-family: BDCartoonShoutRegular;
+  font-family: 'Inter', sans-serif;
   position:absolute;
   visibility:hidden
 }

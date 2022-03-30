@@ -768,7 +768,7 @@ Pacman.Audio = function(game) {
         }
     };
 
-    function pause() { 
+    function pause() {
         for (var i = 0; i < playing.length; i++) {
             files[playing[i]].pause();
         }
@@ -814,7 +814,8 @@ var PACMAN = (function () {
 
     function drawScore(text, position) {
         ctx.fillStyle = "#FFFFFF";
-        ctx.font      = "12px BDCartoonShoutRegular";
+        ctx.font      = "12px Inter";
+        ctx.fontWeight = "bold";
         ctx.fillText(text, 
                      (position["new"]["x"] / 10) * map.blockSize, 
                      ((position["new"]["y"] + 5) / 10) * map.blockSize);
@@ -822,7 +823,7 @@ var PACMAN = (function () {
     
     function dialog(text) {
         ctx.fillStyle = "#FFFF00";
-        ctx.font      = "14px BDCartoonShoutRegular";
+        ctx.font      = "14px Inter";
         var width = ctx.measureText(text).width,
             x     = ((map.width * map.blockSize) - width) / 2;        
         ctx.fillText(text, x, (map.height * 10) + 8);
@@ -896,7 +897,7 @@ var PACMAN = (function () {
         var topLeft  = (map.height * map.blockSize),
             textBase = topLeft + 17;
         
-        ctx.fillStyle = "#000000";
+        ctx.fillStyle = "#0D0D0E";
         ctx.fillRect(0, topLeft, (map.width * map.blockSize), 30);
         
         ctx.fillStyle = "#FFFF00";
@@ -919,7 +920,7 @@ var PACMAN = (function () {
         ctx.fillText("s", 10, textBase);
 
         ctx.fillStyle = "#FFFF00";
-        ctx.font      = "14px BDCartoonShoutRegular";
+        ctx.font      = "14px Inter";
         ctx.fillText("Score: " + user.theScore(), 30, textBase);
         ctx.fillText("Level: " + level, 260, textBase);
     }
@@ -1099,6 +1100,7 @@ var PACMAN = (function () {
     };
         
     function loaded() {
+        startNewGame();
 
         dialog("Press N to Start");
         
@@ -1146,7 +1148,7 @@ Pacman.MAP = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 	[0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0],
 	[0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0],
-	[2, 4, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 4, 2],
+	[4, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 4],
 	[0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
 	[0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0],
 	[0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0],
@@ -1160,7 +1162,7 @@ Pacman.MAP = [
 	[0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0],
 	[0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0],
 	[0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0],
-	[2, 4, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 4, 2],
+	[4, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 4],
 	[0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0],
 	[0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0],
 	[0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
