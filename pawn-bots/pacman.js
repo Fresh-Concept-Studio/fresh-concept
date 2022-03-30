@@ -1100,8 +1100,6 @@ var PACMAN = (function () {
     };
         
     function loaded() {
-        startNewGame();
-
         dialog("Press N to Start");
         
         document.addEventListener("keydown", keyDown, true);
