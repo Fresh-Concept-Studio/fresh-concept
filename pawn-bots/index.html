@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pawn Bots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body style="height: 100%;">
+  <div id="shim">shim for font face</div>
+  <header>
+    <div class="container flex justify-between items-center py-8">
+      <a href="index.html"><img src="images/logo.svg"></a>
+      <ul class="flex">
+        <li><a href="roadmap.html">Map</a></li>
+        <li><a href="mint.html">Mint</a></li>
+        <li><a href="atm.html">ATM</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </header>
+  <div id="pacman" class="relative">
+    <img src="images/roadmap-spot.svg" class="roadmap-spot">
+    <img src="images/mint-spot.svg" class="mint-spot">
+    <img src="images/atm-spot.svg" class="atm-spot">
+    <img src="images/blog-spot.svg" class="blog-spot">
+  </div>
+  <script src="pacman.js"></script>
+  <script src="modernizr-1.5.min.js"></script>
+
+  <script>
+
+    var el = document.getElementById("pacman");
+    el.style.width =window.innerHeight * .84 - 150 +"px";
+
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+  </script>
+
+</body>
+</html>

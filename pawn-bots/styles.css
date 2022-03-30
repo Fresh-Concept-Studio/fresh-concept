@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  background-color: #0D0D0E;
+  width:100%; margin:0px auto;
+  font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+  font-family: 'BDCartoonShoutRegular';
+  src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#pacman {
+  height: 100%;
+  width: 981.12px;
+  margin: 0 auto;
+}
+
+#pacman canvas {
+  position: relative;
+  z-index: 1;
+}
+
+.roadmap-spot {
+  position: absolute;
+  width: 191.5px;
+  top: 12.8%;
+  left: -168px;
+  z-index: 2;
+}
+
+.mint-spot {
+  position: absolute;
+  width: 191.5px;
+  bottom: 20.3%;
+  left: -168px;
+  z-index: 2;
+}
+
+.atm-spot {
+  position: absolute;
+  width: 191.5px;
+  top: 12.8%;
+  right: -168px;
+  z-index: 2;
+}
+
+.blog-spot {
+  position: absolute;
+  width: 191.5px;
+  bottom: 20.3%;
+  right: -168px;
+  z-index: 2;
+}
+
+#shim {
+  font-family: BDCartoonShoutRegular;
+  position:absolute;
+  visibility:hidden
+}
+
+h1 {
+  color: white;
+  font-size: 60px !important;
+}
+
+a {
+  text-decoration:none;
+}
+
+header a {
+  text-decoration: none;
+  color: #9C9B9D;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+header .container {
+  border-bottom: 1px solid #29292B;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin: 0 auto;
+}
