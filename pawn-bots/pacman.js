@@ -826,7 +826,7 @@ var PACMAN = (function () {
         ctx.font      = "14px Inter";
         var width = ctx.measureText(text).width,
             x     = ((map.width * map.blockSize) - width) / 2;        
-        ctx.fillText(text, x, (map.height * 10) - 8);
+        ctx.fillText(text, x, 10);
     }
 
     function soundDisabled() {
